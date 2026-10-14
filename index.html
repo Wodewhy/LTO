@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LTO Tracker – U.S. Fast Food Limited-Time Items</title>
 <style>
-:root{--bg:#faf7f2;--card:#fff;--ink:#1d1b19;--mute:#6b645c;--line:#e6dfd5;--accent:#d93a1f;--soon:#b45309;--soonbg:#fef3c7;--ok:#166534;--okbg:#dcfce7;--na:#475569;--nabg:#e2e8f0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171513;--card:#211e1b;--ink:#f3eee7;--mute:#a69d92;--line:#37322c;--accent:#ff6a4d;--soon:#fcd34d;--soonbg:#4a3508;--ok:#86efac;--okbg:#14351f;--na:#cbd5e1;--nabg:#2b3340;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#171513;--card:#211e1b;--ink:#f3eee7;--mute:#a69d92;--line:#37322c;--accent:#ff6a4d;--soon:#fcd34d;--soonbg:#4a3508;--ok:#86efac;--okbg:#14351f;--na:#cbd5e1;--nabg:#2b3340;color-scheme:dark}
+:root{--bg:#faf7f2;--card:#fff;--ink:#1d1b19;--mute:#6b645c;--line:#e6dfd5;--accent:#d93a1f;--soon:#b45309;--soonbg:#fef3c7;--ok:#166534;--okbg:#dcfce7;--na:#475569;--nabg:#e2e8f0;--nw:#1d4ed8;--nwbg:#dbeafe;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171513;--card:#211e1b;--ink:#f3eee7;--mute:#a69d92;--line:#37322c;--accent:#ff6a4d;--soon:#fcd34d;--soonbg:#4a3508;--ok:#86efac;--okbg:#14351f;--na:#cbd5e1;--nabg:#2b3340;--nw:#93c5fd;--nwbg:#172554;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171513;--card:#211e1b;--ink:#f3eee7;--mute:#a69d92;--line:#37322c;--accent:#ff6a4d;--soon:#fcd34d;--soonbg:#4a3508;--ok:#86efac;--okbg:#14351f;--na:#cbd5e1;--nabg:#2b3340;--nw:#93c5fd;--nwbg:#172554;color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -21,15 +21,15 @@ button{cursor:pointer}
 button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
 label.chk{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:.92rem}
 .count{margin-left:auto;color:var(--mute);font-size:.92rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;align-items:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
 .chain{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700}
 .card h2{font-size:1.1rem;margin:0;line-height:1.3}
 .card p{margin:0;color:var(--mute);font-size:.93rem}
 .end{margin-top:auto;display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:.88rem;padding-top:8px;border-top:1px dashed var(--line)}
 .pill{border-radius:999px;padding:2px 10px;font-weight:600;font-size:.8rem;white-space:nowrap}
-.p-ok{background:var(--okbg);color:var(--ok)}.p-soon{background:var(--soonbg);color:var(--soon)}.p-na{background:var(--nabg);color:var(--na)}
-.src{color:var(--mute);font-size:.78rem}.src a{color:var(--accent)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--bar)}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-soon{background:var(--soonbg);color:var(--soon)}.p-na{background:var(--nabg);color:var(--na)}.p-new{background:var(--nwbg);color:var(--nw)}
+.src{color:var(--mute);font-size:.78rem}.src a{color:var(--accent)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--line)}
 .empty{padding:32px;text-align:center;color:var(--mute)}
 .note{margin-top:28px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--mute);font-size:.88rem}
 </style>
@@ -43,10 +43,11 @@ label.chk{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:.9
     <button id="sortEnd" aria-pressed="true">Ending soonest</button>
     <button id="sortAz" aria-pressed="false">Chain A–Z</button>
     <label class="chk"><input type="checkbox" id="showNA" checked> Include items with no announced end date</label>
+    <label class="chk"><input type="checkbox" id="nowOnly"> Available now only</label>
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"></div>
-  <div class="note">End dates come from each chain's announcements and press coverage. "Not announced" means the chain hasn't published one (often "while supplies last"). Participating locations only; dates and availability can vary. Expired items hide automatically. Photos come from the original posts or articles and belong to their owners.</div>
+  <div class="note">End dates come from each chain's announcements and press coverage. "Not announced" means the chain hasn't published one (often "while supplies last"). Participating locations only; dates and availability can vary. Items that haven't launched yet show their start date. Expired items hide automatically. Photos come from the original posts or articles and belong to their owners.</div>
 </div>
 <script>
 let UPDATED="";
@@ -59,17 +60,22 @@ const fmt=d=>d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"nu
 let sort="end";
 function populate(){const sel=$("chain"),cur=sel.value;sel.length=1;[...new Set(ITEMS.map(i=>i.chain))].sort().forEach(c=>{const o=document.createElement("option");o.value=o.textContent=c;sel.appendChild(o)});sel.value=cur}
 function daysLeft(i){return i.end?Math.round((parse(i.end)-today())/864e5):null}
+const isUp=i=>!!(i.start&&parse(i.start)>today()&&!(i.end&&parse(i.start)>parse(i.end)));
+const daysTo=i=>Math.round((parse(i.start)-today())/864e5);
+const fmtS=d=>d.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+const key=i=>isUp(i)?5e8+daysTo(i):(i.end?daysLeft(i):1e9);
 function render(){
   const ch=$("chain").value,na=$("showNA").checked;
-  let list=ITEMS.filter(i=>(!ch||i.chain===ch)&&(na||i.end)&&(i.end==null||daysLeft(i)>=0));
-  list.sort((a,b)=>sort==="az"?a.chain.localeCompare(b.chain)||a.name.localeCompare(b.name):(a.end?daysLeft(a):1e9)-(b.end?daysLeft(b):1e9));
+  let list=ITEMS.filter(i=>(!ch||i.chain===ch)&&(na||i.end)&&(i.end==null||daysLeft(i)>=0)&&!($("nowOnly").checked&&isUp(i)));
+  list.sort((a,b)=>sort==="az"?a.chain.localeCompare(b.chain)||a.name.localeCompare(b.name):key(a)-key(b));
   $("count").textContent=list.length+" item"+(list.length===1?"":"s");
   const g=$("grid");g.textContent="";
   if(!list.length){g.innerHTML='<div class="empty">No items match.</div>';return}
   list.forEach(i=>{
     const dl=daysLeft(i),c=document.createElement("div");c.className="card";
     let when,pill;
-    if(i.end){when="Ends "+fmt(parse(i.end));pill=dl===0?["Last day","p-soon"]:dl<=7?[dl+(dl===1?" day":" days")+" left","p-soon"]:[dl+(dl===1?" day":" days")+" left","p-ok"]}
+    if(isUp(i)){const n=daysTo(i);when="Starts "+fmt(parse(i.start))+(i.end?" · ends "+fmtS(parse(i.end)):"");pill=["In "+n+(n===1?" day":" days"),"p-new"]}
+    else if(i.end){when="Ends "+fmt(parse(i.end));pill=dl===0?["Last day","p-soon"]:dl<=7?[dl+(dl===1?" day":" days")+" left","p-soon"]:[dl+(dl===1?" day":" days")+" left","p-ok"]}
     else{when="End date not announced";pill=["Unknown","p-na"]}
     const a=document.createElement("div");a.className="chain";a.textContent=i.chain;
     const h=document.createElement("h2");h.textContent=i.name;
@@ -83,7 +89,7 @@ function render(){
     c.append(a,h,p,e,s);g.appendChild(c);
   });
 }
-$("chain").onchange=render;$("showNA").onchange=render;
+$("chain").onchange=render;$("showNA").onchange=render;$("nowOnly").onchange=render;
 $("sortEnd").onclick=()=>{sort="end";$("sortEnd").setAttribute("aria-pressed","true");$("sortAz").setAttribute("aria-pressed","false");render()};
 $("sortAz").onclick=()=>{sort="az";$("sortAz").setAttribute("aria-pressed","true");$("sortEnd").setAttribute("aria-pressed","false");render()};
 fetch("lto.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{ITEMS=d.items;UPDATED=d.updated;$("upd").textContent=fmt(parse(UPDATED));populate();render()}).catch(()=>{$("grid").innerHTML='<div class="empty">Could not load lto.json.</div>'});

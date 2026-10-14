@@ -215,6 +215,8 @@ def validate(raw_items, post, today):
         end, start = parse_iso(x.get("end")), parse_iso(x.get("start"))
         if end and (end < posted - timedelta(days=1) or end > today + timedelta(days=400)):
             end = None  # implausible: treat as unannounced rather than trust it
+        if start and (start > today + timedelta(days=400) or (end and start > end)):
+            start = None
         url = post["url"] if str(post["url"]).startswith(("http://", "https://")) else ""
         img = str(post.get("image") or "")
         img = img if img.startswith("https://") else ""
@@ -265,7 +267,7 @@ def merge(items, new, today):
         newer = n["last_post"] >= hit.get("last_post", "")
         if n["end"] and (not hit["end"] or newer):
             hit["end"] = n["end"]  # newest explicit end date wins
-        if n["start"] and not hit.get("start"):
+        if n["start"] and (not hit.get("start") or newer):
             hit["start"] = n["start"]
         if n.get("image") and (not hit.get("image") or newer):
             hit["image"] = n["image"]
