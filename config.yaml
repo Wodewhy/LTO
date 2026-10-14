@@ -1,0 +1,35 @@
+# Chains to watch. `x` is the chain's X (Twitter) handle. VERIFY each handle before first run.
+# `sources` can add RSS/newsroom feeds or vendor JSON feeds (see README for Instagram/TikTok/Facebook).
+chains:
+  - {name: "McDonald's", x: McDonalds}
+  - {name: "Burger King", x: BurgerKing}
+  - {name: "Wendy's", x: Wendys}
+  - {name: "Taco Bell", x: tacobell}
+  - {name: "KFC", x: KFC}
+  - {name: "Popeyes", x: PopeyesChicken}
+  - {name: "Chick-fil-A", x: ChickfilA}
+  - {name: "Dairy Queen", x: DairyQueen}
+  - {name: "Sonic", x: sonicdrivein}
+  - {name: "Arby's", x: Arbys}
+  - {name: "Subway", x: SUBWAY}
+  - {name: "Dunkin'", x: dunkin}
+  - {name: "Starbucks", x: Starbucks}
+  - {name: "Domino's", x: dominos}
+  - {name: "Pizza Hut", x: pizzahut}
+  - {name: "Papa Johns", x: PapaJohns}
+  - {name: "Culver's", x: Culvers}
+  - {name: "Jack in the Box", x: jackinthebox}
+
+  # Example of a vendor feed for Instagram/TikTok/Facebook (uncomment and adapt):
+  # - name: "Taco Bell"
+  #   x: tacobell
+  #   sources:
+  #     - type: json
+  #       label: Instagram
+  #       url: "https://api.your-vendor.example/v2/dataset/items?token=${VENDOR_TOKEN}"
+  #       fields: {id: id, text: caption, url: url, posted: timestamp}
+
+# Aggregators / news sources. Claude figures out the chain from the text.
+# Only facts are extracted; each item links back to the original.
+global_sources:
+  - {type: rss, label: Brand Eating, url: "https://www.brandeating.com/feeds/posts/default"}
