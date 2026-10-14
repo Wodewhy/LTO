@@ -12,6 +12,7 @@ import re
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import feedparser
 import requests
@@ -76,14 +77,32 @@ def fetch_x(chain, handle):
         f"https://api.x.com/2/users/{uid}/tweets",
         headers=h,
         timeout=30,
-        params={"max_results": 20, "exclude": "retweets,replies", "tweet.fields": "created_at"},
+        params={"max_results": 20, "exclude": "retweets,replies", "tweet.fields": "created_at",
+                "expansions": "attachments.media_keys", "media.fields": "url,preview_image_url,type"},
     )
     r.raise_for_status()
+    j = r.json()
+    media = {m["media_key"]: (m.get("url") or m.get("preview_image_url") or "")
+             for m in j.get("includes", {}).get("media", [])}
     return [
         dict(chain=chain, platform="X", id=f"x:{t['id']}", text=t["text"],
-             url=f"https://x.com/{handle}/status/{t['id']}", posted=t["created_at"])
-        for t in r.json().get("data", [])
+             url=f"https://x.com/{handle}/status/{t['id']}", posted=t["created_at"],
+             image=next((media[k] for k in t.get("attachments", {}).get("media_keys", []) if media.get(k)), ""))
+        for t in j.get("data", [])
     ]
+
+
+def feed_image(e):
+    for key in ("media_thumbnail", "media_content"):
+        for m in e.get(key, []) or []:
+            if m.get("url"):
+                return m["url"]
+    for l in e.get("enclosures", []) or []:
+        if str(l.get("type", "")).startswith("image") and l.get("href"):
+            return l["href"]
+    blob = " ".join([e.get("summary", "")] + [x.get("value", "") for x in e.get("content", []) or []])
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)', blob)
+    return html.unescape(m.group(1)) if m else ""
 
 
 def fetch_rss(chain, url, label=None):
@@ -93,7 +112,7 @@ def fetch_rss(chain, url, label=None):
         posted = datetime(*e.published_parsed[:6], tzinfo=timezone.utc).isoformat() if e.get("published_parsed") else ""
         text = strip_html(f"{e.get('title', '')}. {e.get('summary', '')}")
         out.append(dict(chain=chain, platform=label or "RSS", id=f"rss:{e.get('id') or e.get('link')}",
-                        text=text, url=e.get("link", ""), posted=posted))
+                        text=text, url=e.get("link", ""), posted=posted, image=feed_image(e)))
     return out
 
 
@@ -111,6 +130,7 @@ def fetch_json(chain, cfg):
             id=f"json:{cfg['label']}:{row.get(f.get('id', 'id'))}",
             text=row.get(f.get("text", "text"), ""), url=row.get(f.get("url", "url"), ""),
             posted=row.get(f.get("posted", "posted"), ""),
+            image=row.get(f.get("image", "image"), "") or "",
         ))
     return out
 
@@ -162,6 +182,21 @@ def parse_iso(s):
         return None
 
 
+KNOWN = []  # canonical chain names, filled from config.yaml
+
+
+def canon_chain(name):
+    """Map 'McDonalds', 'Panera', 'Sonic Drive-In' etc. onto the names in config.yaml."""
+    n = re.sub(r"[^a-z0-9]", "", name.lower())
+    for k in KNOWN:
+        kn = re.sub(r"[^a-z0-9]", "", k.lower())
+        if n == kn or difflib.SequenceMatcher(None, n, kn).ratio() >= 0.88:
+            return k
+        if min(len(n), len(kn)) >= 5 and (n in kn or kn in n):
+            return k
+    return name
+
+
 def validate(raw_items, post, today):
     """Turn model output into trusted records. Anything odd is dropped or nulled."""
     out = []
@@ -170,7 +205,7 @@ def validate(raw_items, post, today):
         if not isinstance(x, dict):
             continue
         name = str(x.get("name") or "").strip()[:100]
-        chain = (post["chain"] or str(x.get("chain") or "")).strip()[:60]
+        chain = canon_chain((post["chain"] or str(x.get("chain") or "")).strip()[:60])
         try:
             conf = float(x.get("confidence", 0))
         except (TypeError, ValueError):
@@ -181,10 +216,12 @@ def validate(raw_items, post, today):
         if end and (end < posted - timedelta(days=1) or end > today + timedelta(days=400)):
             end = None  # implausible: treat as unannounced rather than trust it
         url = post["url"] if str(post["url"]).startswith(("http://", "https://")) else ""
+        img = str(post.get("image") or "")
+        img = img if img.startswith("https://") else ""
         out.append(dict(chain=chain, name=name, desc=str(x.get("desc") or "").strip()[:160],
                         start=start.isoformat() if start else None,
                         end=end.isoformat() if end else None,
-                        src=post["platform"], url=url, last_post=posted.isoformat()))
+                        src=post["platform"], url=url, image=img, last_post=posted.isoformat()))
     return out
 
 
@@ -196,9 +233,13 @@ def extract(post, today):
     raw = claude(prompt).strip()
     raw = re.sub(r"^```(?:json)?|```$", "", raw, flags=re.M).strip()
     try:
-        return validate(json.loads(raw), post, today)
+        found = validate(json.loads(raw), post, today)
     except json.JSONDecodeError:
         return []
+    if post["chain"] is None and len(found) > 1:  # one photo can't be assigned to several items
+        for f in found:
+            f["image"] = ""
+    return found
 
 
 # ----------------------------------------------------------------------------
@@ -226,6 +267,8 @@ def merge(items, new, today):
             hit["end"] = n["end"]  # newest explicit end date wins
         if n["start"] and not hit.get("start"):
             hit["start"] = n["start"]
+        if n.get("image") and (not hit.get("image") or newer):
+            hit["image"] = n["image"]
         if newer:
             hit["last_post"] = n["last_post"]
             if n["url"]:
@@ -233,6 +276,42 @@ def merge(items, new, today):
             if len(n["desc"]) > len(hit.get("desc", "")):
                 hit["desc"] = n["desc"]
     return items
+
+
+OG = [re.compile(p, re.I) for p in (
+    r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]*content=["\']([^"\']+)',
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image|twitter:image)["\']',
+)]
+
+
+def og_image(url):
+    """The link-preview image of an article page (what Slack or iMessage would show)."""
+    try:
+        r = requests.get(url, timeout=15, headers={"User-Agent": "LTO-Tracker/1.0 (link preview)"})
+        r.raise_for_status()
+    except Exception:
+        return ""
+    for rx in OG:
+        m = rx.search(r.text[:200000])
+        if m:
+            img = urljoin(url, html.unescape(m.group(1)))
+            return img if img.startswith("https://") else ""
+    return ""
+
+
+def enrich_images(items, limit=25):
+    """Fill in photos for items that have an article URL but no image yet."""
+    done = 0
+    for i in items:
+        if i.get("image") or i.get("img_checked") or not i.get("url"):
+            continue
+        if urlparse(i["url"]).netloc.endswith(("x.com", "twitter.com")):
+            continue  # X pages need JavaScript; X posts supply media through the API instead
+        if done >= limit:
+            break
+        i["image"] = og_image(i["url"])
+        i["img_checked"] = True
+        done += 1
 
 
 def prune(items, today):
@@ -251,6 +330,7 @@ def main():
     dry = "--dry-run" in sys.argv
     today = datetime.now(timezone.utc).date()
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text())
+    KNOWN.extend(c["name"] for c in cfg.get("chains", []))
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     data = json.loads(OUT.read_text()) if OUT.exists() else {"items": []}
     items = data["items"]
@@ -270,6 +350,7 @@ def main():
             print(f"  + {f['chain']}: {f['name']} (ends {f['end'] or 'n/a'})")
         merge(items, found, today)
 
+    enrich_images(items)
     items = prune(items, today)
     items.sort(key=lambda i: (i["end"] or "9999", i["chain"]))
     if dry:
