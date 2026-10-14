@@ -1,35 +1,87 @@
-# Chains to watch. `x` is the chain's X (Twitter) handle. VERIFY each handle before first run.
-# `sources` can add RSS/newsroom feeds or vendor JSON feeds (see README for Instagram/TikTok/Facebook).
+# Chains to watch.
+#   name: the display name (also used to tidy up names found in news feeds)
+#   x:    the chain's X (Twitter) handle. Optional. VERIFY each handle before relying on it;
+#         a wrong handle just logs a warning and is skipped.
+# X handles only do something if the X_BEARER_TOKEN secret is set. Each handle costs about
+# 2 X API calls per run, so a long list gets expensive on paid X tiers. Trim as needed.
 chains:
+  # Burgers
   - {name: "McDonald's", x: McDonalds}
   - {name: "Burger King", x: BurgerKing}
   - {name: "Wendy's", x: Wendys}
-  - {name: "Taco Bell", x: tacobell}
+  - {name: "Sonic", x: sonicdrivein}
+  - {name: "Jack in the Box", x: jackinthebox}
+  - {name: "Carl's Jr.", x: CarlsJr}
+  - {name: "Hardee's", x: Hardees}
+  - {name: "Whataburger", x: Whataburger}
+  - {name: "Culver's", x: Culvers}
+  - {name: "Shake Shack", x: shakeshack}
+  - {name: "Five Guys", x: FiveGuys}
+  - {name: "White Castle", x: WhiteCastle}
+  - {name: "Steak 'n Shake", x: SteaknShake}
+  - {name: "Checkers & Rally's"}
+  - {name: "Krystal"}
+  # Chicken
   - {name: "KFC", x: KFC}
   - {name: "Popeyes", x: PopeyesChicken}
   - {name: "Chick-fil-A", x: ChickfilA}
-  - {name: "Dairy Queen", x: DairyQueen}
-  - {name: "Sonic", x: sonicdrivein}
-  - {name: "Arby's", x: Arbys}
-  - {name: "Subway", x: SUBWAY}
-  - {name: "Dunkin'", x: dunkin}
-  - {name: "Starbucks", x: Starbucks}
+  - {name: "Raising Cane's", x: raisingcanes}
+  - {name: "Zaxby's", x: Zaxbys}
+  - {name: "Bojangles"}
+  - {name: "Church's Texas Chicken"}
+  - {name: "El Pollo Loco", x: ElPolloLoco}
+  - {name: "Wingstop", x: Wingstop}
+  - {name: "Buffalo Wild Wings", x: BWWings}
+  - {name: "Dave's Hot Chicken", x: DavesHotChicken}
+  # Mexican
+  - {name: "Taco Bell", x: tacobell}
+  - {name: "Del Taco", x: deltaco}
+  - {name: "Chipotle"}
+  - {name: "Qdoba", x: Qdoba}
+  - {name: "Moe's Southwest Grill"}
+  # Pizza
   - {name: "Domino's", x: dominos}
   - {name: "Pizza Hut", x: pizzahut}
   - {name: "Papa Johns", x: PapaJohns}
-  - {name: "Culver's", x: Culvers}
-  - {name: "Jack in the Box", x: jackinthebox}
+  - {name: "Little Caesars", x: LittleCaesars}
+  - {name: "Marco's Pizza"}
+  - {name: "Papa Murphy's"}
+  # Sandwiches and bakery-cafe
+  - {name: "Subway", x: SUBWAY}
+  - {name: "Arby's", x: Arbys}
+  - {name: "Jimmy John's", x: jimmyjohns}
+  - {name: "Jersey Mike's", x: jerseymikes}
+  - {name: "Firehouse Subs", x: FirehouseSubs}
+  - {name: "Panera Bread", x: panerabread}
+  - {name: "Panda Express", x: PandaExpress}
+  # Coffee, donuts, dessert, drinks
+  - {name: "Starbucks", x: Starbucks}
+  - {name: "Dunkin'", x: dunkin}
+  - {name: "Tim Hortons", x: TimHortons}
+  - {name: "Dutch Bros", x: DutchBros}
+  - {name: "Krispy Kreme", x: krispykreme}
+  - {name: "Dairy Queen", x: DairyQueen}
+  - {name: "Baskin-Robbins", x: baskinrobbins}
+  - {name: "Cold Stone Creamery", x: ColdStone}
+  - {name: "Smoothie King", x: smoothieking}
+  - {name: "Tropical Smoothie Cafe"}
+  - {name: "Crumbl"}
+  # Casual dining that often shows up in fast food news
+  - {name: "Chili's"}
+  - {name: "Applebee's"}
 
-  # Example of a vendor feed for Instagram/TikTok/Facebook (uncomment and adapt):
+  # Example of a vendor feed for Instagram/TikTok/Facebook (uncomment and adapt). Add an
+  # optional `image` field mapping if the vendor returns a photo URL:
   # - name: "Taco Bell"
   #   x: tacobell
   #   sources:
   #     - type: json
   #       label: Instagram
   #       url: "https://api.your-vendor.example/v2/dataset/items?token=${VENDOR_TOKEN}"
-  #       fields: {id: id, text: caption, url: url, posted: timestamp}
+  #       fields: {id: id, text: caption, url: url, posted: timestamp, image: displayUrl}
 
-# Aggregators / news sources. Claude figures out the chain from the text.
-# Only facts are extracted; each item links back to the original.
+# News/aggregator RSS feeds. Claude works out the chain from the text. Only facts are
+# extracted; each item links back to the original article. Both feeds below were checked.
 global_sources:
   - {type: rss, label: Brand Eating, url: "https://www.brandeating.com/feeds/posts/default"}
+  - {type: rss, label: The Fast Food Post, url: "https://www.fastfoodpost.com/feed/"}
