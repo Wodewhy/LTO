@@ -1,0 +1,22 @@
+:root{--bg:#faf7f2;--card:#fff;--ink:#1d1b19;--mute:#6b645c;--line:#e6dfd5;--accent:#d93a1f;--soon:#b45309;--soonbg:#fef3c7;--ok:#166534;--okbg:#dcfce7;--na:#475569;--nabg:#e2e8f0;--nw:#1d4ed8;--nwbg:#dbeafe;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#171513;--card:#211e1b;--ink:#f3eee7;--mute:#a69d92;--line:#37322c;--accent:#ff6a4d;--soon:#fcd34d;--soonbg:#4a3508;--ok:#86efac;--okbg:#14351f;--na:#cbd5e1;--nabg:#2b3340;--nw:#93c5fd;--nwbg:#172554;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 56px}
+a{color:var(--accent)}
+.top{margin-bottom:18px;font-weight:700}
+.top a{text-decoration:none;color:var(--ink)}.top span{color:var(--accent)}
+.crumbs{font-size:.88rem;color:var(--mute);margin-bottom:14px}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.2;margin:4px 0 10px;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin:28px 0 8px}
+.chain{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700;margin:0}
+.hero{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:var(--line);margin-bottom:14px}
+.pill{display:inline-block;border-radius:999px;padding:2px 12px;font-weight:600;font-size:.85rem;white-space:nowrap}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-soon{background:var(--soonbg);color:var(--soon)}.p-na{background:var(--nabg);color:var(--na)}.p-new{background:var(--nwbg);color:var(--nw)}
+.lead{font-size:1.08rem}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0}
+.facts dt{color:var(--mute)}.facts dd{margin:0}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.list li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.list a{font-weight:600;text-decoration:none;color:var(--ink)}
+.note{margin-top:28px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--mute);font-size:.86rem}

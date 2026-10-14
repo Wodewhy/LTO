@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wodewhy.github.io/LTO/sitemap.xml
