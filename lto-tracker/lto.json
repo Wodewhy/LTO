@@ -1,0 +1,159 @@
+{
+ "updated": "2026-10-14",
+ "items": [
+  {
+   "chain": "Dairy Queen",
+   "name": "Spellbound Series",
+   "desc": "Bubble Brew DQ Sparkler, Enchanted Oreo Blizzard and Ghost Pepper Sauce.",
+   "start": null,
+   "end": "2026-11-01",
+   "src": "Food Republic",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Buffalo Wild Wings",
+   "name": "Fright Feast Menu",
+   "desc": "Halloween-themed limited menu at participating locations.",
+   "start": null,
+   "end": "2026-11-09",
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Cold Stone Creamery",
+   "name": "Halloween Lineup (black Cake Batter)",
+   "desc": "Jet-black take on Cake Batter Ice Cream and other Halloween creations.",
+   "start": null,
+   "end": "2026-10-31",
+   "src": "PR Newswire via Allrecipes",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Krispy Kreme",
+   "name": "Looney Tunes Lab Dozen",
+   "desc": "$13 Halloween dozen from the Looney Tunes collection.",
+   "start": null,
+   "end": "2026-10-15",
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Burger King",
+   "name": "Game Day Menu",
+   "desc": "Game Day Pretzel Burger (beef, bacon, crispy onions, two cheeses) and Chicken Fries with Nacho Cheese Sauce. Started Oct 6.",
+   "start": null,
+   "end": null,
+   "src": "Food Republic",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Duo Habanero Sauce",
+   "desc": "Limited-edition fruity, tangy, mildly spicy sauce from the Duolingo collab.",
+   "start": null,
+   "end": null,
+   "src": "Food Republic",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Milk Bar Birthday Cake Empanada",
+   "desc": "New dessert launching nationwide Oct 15.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "McDonald's",
+   "name": "Caramel Apple Pie Coffees",
+   "desc": "Frapp\u00e9, hot and iced lattes and iced coffee with salted caramel whipped cream and pie bits.",
+   "start": null,
+   "end": null,
+   "src": "McDonald's",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "McDonald's",
+   "name": "Boo Buckets Happy Meal",
+   "desc": "Iconic Halloween Happy Meal buckets return Oct 15.",
+   "start": null,
+   "end": null,
+   "src": "McDonald's",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Dunkin'",
+   "name": "Halloween Menu",
+   "desc": "Drinks built on Green Apple Dunkin' Zero and Purple Marshmallow Cold Foam; more items teased for Oct 14.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "KFC",
+   "name": "Ghost Pepper Sauce",
+   "desc": "Limited-time ghost pepper dipping sauce at participating locations.",
+   "start": null,
+   "end": null,
+   "src": "Fast Food Watch",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Arby's",
+   "name": "Chicken Cheesesteaks",
+   "desc": "New limited-time chicken cheesesteak sandwiches.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Firehouse Subs",
+   "name": "Thanksgiving Turkey Sub",
+   "desc": "Seasonal turkey sub back for the holidays.",
+   "start": null,
+   "end": null,
+   "src": "Food Republic",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  },
+  {
+   "chain": "Marco's Pizza",
+   "name": "Margherita Magnifico",
+   "desc": "Returning pizza, from $12.99 for a large.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "",
+   "first_seen": "2026-10-14",
+   "last_post": "2026-10-14"
+  }
+ ]
+}
