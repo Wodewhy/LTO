@@ -48,12 +48,12 @@
   {
    "chain": "Wingstop",
    "name": "Sour Patch Kids Wicked Punch",
-   "desc": "Limited-time Halloween wing flavor: sour-then-sweet redberry glaze topped with Sour Patch Kids Bitz candy. Also available on other chicken items.",
+   "desc": "Limited-time sour-then-sweet redberry glaze on bone-in or boneless wings, made with Sour Patch Kids. Club Wingstop members get early access Oct 23.",
    "start": "2026-10-27",
    "end": "2026-11-05",
-   "src": "Brand Eating",
-   "url": "https://www.brandeating.com/2026/10/wingstop-new-sour-patch-kids-wicked-punch-kids.html",
-   "last_post": "2026-10-13",
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/wingstop-debuts-new-sour-patch-kids-wicked-punch-glazed-wings/",
+   "last_post": "2026-10-14",
    "first_seen": "2026-10-14"
   },
   {
@@ -71,7 +71,7 @@
    "chain": "Arby's",
    "name": "Chicken Cheesesteaks",
    "desc": "New limited-time chicken cheesesteak sandwiches.",
-   "start": null,
+   "start": "2026-10-01",
    "end": null,
    "src": "Brand Eating",
    "url": "",
@@ -90,13 +90,46 @@
    "last_post": "2026-10-14"
   },
   {
+   "chain": "Burger King",
+   "name": "Vampire's Bite Strawberry & Sprite",
+   "desc": "Halloween drink of Sprite blended with strawberry-flavored syrup, served with an edible Sour Punch candy straw.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/burger-king-unleashes-new-vampires-bite-strawberry-sprite-drink-for-halloween/",
+   "last_post": "2026-10-08",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "chain": "Burger King",
+   "name": "Game Day Pretzel Burger",
+   "desc": "Quarter-pound flame-grilled beef patty with American cheese, bacon and crispy onions, part of BK's new stadium-inspired game day menu.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/burger-king-debuts-new-stadium-inspired-menu-with-game-day-pretzel-burger-and-game-day-chicken-fries/",
+   "last_post": "2026-10-08",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "chain": "Burger King",
+   "name": "Game Day Chicken Fries",
+   "desc": "Chicken Fries with a game day twist, part of Burger King's new stadium-inspired menu at participating U.S. locations.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/burger-king-debuts-new-stadium-inspired-menu-with-game-day-pretzel-burger-and-game-day-chicken-fries/",
+   "last_post": "2026-10-08",
+   "first_seen": "2026-10-14"
+  },
+  {
    "chain": "Chili's",
    "name": "Chicken Parm Big Crispy",
    "desc": "Big Crispy chicken sandwich with fried mozzarella and marinara on a toasted bun. Comes with fries, white cheddar mac & cheese, marinara and ranch.",
    "start": "2026-10-20",
    "end": null,
-   "src": "Brand Eating",
-   "url": "https://www.brandeating.com/2026/10/chilis-new-chicken-parm-big-crispy-sandwich.html",
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/chilis-launches-new-chicken-parm-big-crispy-sandwich/",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14"
   },
@@ -211,6 +244,39 @@
    "last_post": "2026-10-14"
   },
   {
+   "chain": "Popeyes",
+   "name": "Bacon and Cheese Honey Chicken Biscuit",
+   "desc": "Biscuit sandwich with a crispy Louisiana-seasoned chicken breast fillet, Havarti cheese, bacon and a honey drizzle. Added to the Honey Chicken Biscuit lineup.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/popeyes-adds-new-bacon-and-cheese-honey-chicken-biscuit-and-pineapple-beverages/",
+   "last_post": "2026-10-07",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "chain": "Popeyes",
+   "name": "Pineapple Beverages",
+   "desc": "New pineapple-flavored drinks added to menus at participating locations nationwide. Specific drink details were not given.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/popeyes-adds-new-bacon-and-cheese-honey-chicken-biscuit-and-pineapple-beverages/",
+   "last_post": "2026-10-07",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "chain": "Shake Shack",
+   "name": "Big Shack",
+   "desc": "Returning burger with two quarter-pound Angus beef patties, two slices of American cheese, lettuce, tomato, pickles, onions and Shack sauce.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/shake-shack-welcomes-back-the-big-shack/",
+   "last_post": "2026-10-09",
+   "first_seen": "2026-10-14"
+  },
+  {
    "chain": "Taco Bell",
    "name": "Duo Habanero Sauce",
    "desc": "Limited-edition fruity, tangy, mildly spicy sauce from the Duolingo collab.",
@@ -225,7 +291,7 @@
    "chain": "Taco Bell",
    "name": "Milk Bar Birthday Cake Empanada",
    "desc": "New dessert launching nationwide Oct 15.",
-   "start": null,
+   "start": "2026-10-15",
    "end": null,
    "src": "Brand Eating",
    "url": "",
