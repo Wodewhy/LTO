@@ -1,3 +1,9 @@
+# Optional settings (uncomment to use):
+#   site_url: "https://yourdomain.com"        # your public address, used in page links and the sitemap
+#   contact_url: "mailto:you@yourdomain.com"  # footer link for questions and removal requests (https:// or mailto:)
+# Photos are OFF by default. List a chain here ONLY after it gives you written permission to show its photos.
+photo_permission: []
+
 # Chains to watch.
 #   name: the display name (also used to tidy up names found in news feeds)
 #   x:    the chain's X (Twitter) handle. Optional. VERIFY each handle before relying on it;

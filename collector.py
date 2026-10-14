@@ -183,6 +183,11 @@ def parse_iso(s):
 
 
 KNOWN = []  # canonical chain names, filled from config.yaml
+PHOTO_OK = set()  # chains with written permission to show photos (config.yaml: photo_permission)
+
+
+def squash(s):
+    return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
 def canon_chain(name):
@@ -219,7 +224,7 @@ def validate(raw_items, post, today):
             start = None
         url = post["url"] if str(post["url"]).startswith(("http://", "https://")) else ""
         img = str(post.get("image") or "")
-        img = img if img.startswith("https://") else ""
+        img = img if (img.startswith("https://") and squash(chain) in PHOTO_OK) else ""
         out.append(dict(chain=chain, name=name, desc=str(x.get("desc") or "").strip()[:160],
                         start=start.isoformat() if start else None,
                         end=end.isoformat() if end else None,
@@ -305,7 +310,7 @@ def enrich_images(items, limit=25):
     """Fill in photos for items that have an article URL but no image yet."""
     done = 0
     for i in items:
-        if i.get("image") or i.get("img_checked") or not i.get("url"):
+        if i.get("image") or i.get("img_checked") or not i.get("url") or squash(i.get("chain", "")) not in PHOTO_OK:
             continue
         if urlparse(i["url"]).netloc.endswith(("x.com", "twitter.com")):
             continue  # X pages need JavaScript; X posts supply media through the API instead
@@ -333,6 +338,7 @@ def main():
     today = datetime.now(timezone.utc).date()
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text())
     KNOWN.extend(c["name"] for c in cfg.get("chains", []))
+    PHOTO_OK.update(squash(x) for x in cfg.get("photo_permission") or [])
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     data = json.loads(OUT.read_text()) if OUT.exists() else {"items": []}
     items = data["items"]

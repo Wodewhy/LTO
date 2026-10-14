@@ -24,6 +24,9 @@ _cfg_path = ROOT / "config.yaml"
 CFG = (yaml.safe_load(_cfg_path.read_text()) or {}) if _cfg_path.exists() else {}
 SITE = (os.environ.get("SITE_URL") or CFG.get("site_url") or "https://wodewhy.github.io/LTO").rstrip("/")
 NAME = CFG.get("site_name") or "LTO Tracker"
+CONTACT = str(CFG.get("contact_url") or "https://github.com/Wodewhy/LTO/issues")
+if not CONTACT.startswith(("https://", "mailto:")):
+    CONTACT = "https://github.com/Wodewhy/LTO/issues"
 # US Pacific date, so an offer isn't marked "ended" while the last day is still running out west.
 TODAY = datetime.now(ZoneInfo("America/Los_Angeles")).date()
 UP = "../../"  # every generated page lives two folders deep
@@ -45,6 +48,8 @@ h2{font-size:1.15rem;margin:28px 0 8px}
 .pill{display:inline-block;border-radius:999px;padding:2px 12px;font-weight:600;font-size:.85rem;white-space:nowrap}
 .p-ok{background:var(--okbg);color:var(--ok)}.p-soon{background:var(--soonbg);color:var(--soon)}.p-na{background:var(--nabg);color:var(--na)}.p-new{background:var(--nwbg);color:var(--nw)}
 .lead{font-size:1.08rem}
+.tile{display:grid;place-items:center;aspect-ratio:16/7;border-radius:14px;font-size:3.6rem;margin-bottom:14px;background:hsl(var(--h) 75% 91%)}
+@media (prefers-color-scheme:dark){.tile{background:hsl(var(--h) 30% 22%)}}
 .facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0}
 .facts dt{color:var(--mute)}.facts dd{margin:0}
 .list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
@@ -85,6 +90,53 @@ def slugify(s):
 
 def squash(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+PHOTO_OK = {squash(x) for x in (CFG.get("photo_permission") or [])}  # chains with written photo permission
+
+# Original, brand-free tiles: (emoji, hue). First matching rule wins; the third value means "match the name only".
+ICONS = {
+    "burger": ("\U0001F354", 28), "chicken": ("\U0001F357", 38), "taco": ("\U0001F32E", 48),
+    "pizza": ("\U0001F355", 8), "sandwich": ("\U0001F96A", 85), "coffee": ("\u2615", 25),
+    "bakery": ("\U0001F369", 330), "icecream": ("\U0001F366", 200), "drink": ("\U0001F964", 185),
+    "sauce": ("\U0001F336\uFE0F", 355), "meal": ("\U0001F37D\uFE0F", 260),
+}
+RULES = [
+    ("sauce", r"\bsauces?\b|\bdips?\b", True),
+    ("coffee", r"coffee|latte|espresso|cold brew|frapp|macchiato|cold foam|cappuccino|mocha", False),
+    ("icecream", r"ice cream|blizzard|sundae|soft serve|gelato|\bshakes?\b|\bcones?\b|mochi", False),
+    ("bakery", r"donut|doughnut|dozen|cookie|\bcakes?\b|pastry|bakery|muffin|croissant|\bpie\b|brownie", False),
+    ("pizza", r"pizza|pepperoni", False),
+    ("taco", r"taco|burrito|quesadilla|chalupa|crunchwrap|empanada|tostada", False),
+    ("sandwich", r"sandwich|\bsubs?\b|cheesesteak|hoagie|\bwraps?\b|panini", False),
+    ("burger", r"burger|whopper|big mac|patty|patties|smash", False),
+    ("chicken", r"chicken|\bwings?\b|nuggets|tenders|drumstick|popcorn", False),
+    ("drink", r"drink|soda|sprite|refresher|lemonade|slush|smoothie|sparkler|punch|beverage|\btea\b|\bcola\b", False),
+]
+_DEFAULTS = {
+    "burger": ["McDonald's", "Burger King", "Wendy's", "Sonic", "Jack in the Box", "Carl's Jr.", "Hardee's",
+               "Whataburger", "Culver's", "Shake Shack", "Five Guys", "White Castle", "Steak 'n Shake",
+               "Checkers & Rally's", "Krystal"],
+    "chicken": ["KFC", "Popeyes", "Chick-fil-A", "Raising Cane's", "Zaxby's", "Bojangles", "Church's Texas Chicken",
+                "El Pollo Loco", "Wingstop", "Buffalo Wild Wings", "Dave's Hot Chicken"],
+    "taco": ["Taco Bell", "Del Taco", "Chipotle", "Qdoba", "Moe's Southwest Grill"],
+    "pizza": ["Domino's", "Pizza Hut", "Papa Johns", "Little Caesars", "Marco's Pizza", "Papa Murphy's"],
+    "sandwich": ["Subway", "Arby's", "Jimmy John's", "Jersey Mike's", "Firehouse Subs", "Panera Bread"],
+    "coffee": ["Starbucks", "Dunkin'", "Tim Hortons", "Dutch Bros"],
+    "bakery": ["Krispy Kreme", "Crumbl"],
+    "icecream": ["Dairy Queen", "Baskin-Robbins", "Cold Stone Creamery"],
+    "drink": ["Smoothie King", "Tropical Smoothie Cafe"],
+}
+CHAIN_DEFAULT = {squash(n): cat for cat, names in _DEFAULTS.items() for n in names}
+
+
+def category(i):
+    name = i["name"].lower()
+    both = f'{i["name"]} {i.get("desc") or ""}'.lower()
+    for cat, rx, name_only in RULES:
+        if re.search(rx, name if name_only else both):
+            return cat
+    return CHAIN_DEFAULT.get(squash(i["chain"]), "meal")
 
 
 def label(i):
@@ -160,7 +212,7 @@ def shell(title, desc, canonical, body, image="", noindex=False):
 </head><body><div class="wrap">
 <div class="top"><a href="{UP}">&#127828; LTO <span>Tracker</span></a></div>
 {body}
-<div class="note">Dates come from each chain's announcements and press coverage and can vary by location. Last updated {esc(fmt(TODAY))}. <a href="{UP}">See all current limited-time offers</a>.</div>
+<div class="note">Dates come from each chain's announcements and press coverage and can vary by location. Last updated {esc(fmt(TODAY))}. This site is not affiliated with or endorsed by any restaurant; names are trademarks of their owners. Questions or removal requests: <a href="{esc(CONTACT)}">contact us</a>. <a href="{UP}">See all current limited-time offers</a>.</div>
 </div></body></html>
 """
 
@@ -189,6 +241,15 @@ def main():
                 slug, n = f"{base}-{n}", n + 1
             i["slug"] = slug
             used.add(slug)
+    for i in items:
+        cat = category(i)
+        i["cat"] = cat
+        i["icon"], i["hue"] = ICONS[cat]
+        i["photo_ok"] = squash(i["chain"]) in PHOTO_OK
+        if not i["photo_ok"]:  # no third-party photos without written permission
+            i.pop("image", None)
+            i.pop("img_checked", None)
+    data["contact"] = CONTACT
     new_raw = json.dumps(data, indent=1, ensure_ascii=False)
     if new_raw != raw:
         path.write_text(new_raw)
@@ -215,7 +276,7 @@ def main():
         st, s, e = info[k]
         chain = i["chain"]
         text, cls = pill(st, s, e)
-        img = str(i.get("image") or "")
+        img = str(i.get("image") or "") if i.get("photo_ok") else ""
         img = img if img.startswith("https://") else ""
         url = str(i.get("url") or "")
         src = esc(i.get("src") or "the original post")
@@ -227,6 +288,10 @@ def main():
         facts += f"<dt>Ends</dt><dd>{esc(fmt(e)) if e else 'Not announced'}</dd>"
         facts += f"<dt>Source</dt><dd>{src_html}</dd>"
         lead = sentence(i, st, s, e)
+        tile_html = (f'<div class="tile" style="--h:{int(i.get("hue", 30))}" aria-hidden="true">'
+                     f'<span>{esc(i.get("icon", "\U0001F37D"))}</span></div>')
+        hero = (f'<img class="hero" src="{esc(img)}" alt="{esc(label(i))}" referrerpolicy="no-referrer" '
+                f'onerror="this.remove()">')
         desc = (i.get("desc") or "").strip()
         about = f"<h2>About this item</h2><p>{esc(desc)}</p>" if desc else ""
         same = [j for j in chains.get(chain, []) if j != k][:8]
@@ -243,8 +308,7 @@ def main():
         crumb_chain = (f' &rsaquo; <a href="{UP}chains/{chain_slug[chain]}/">{esc(chain)}</a>'
                        if chain in chain_slug else f" &rsaquo; {esc(chain)}")
         body = (f'<div class="crumbs"><a href="{UP}">All offers</a>{crumb_chain}</div><article>'
-                + (f'<img class="hero" src="{esc(img)}" alt="{esc(label(i))}" referrerpolicy="no-referrer" '
-                   f'onerror="this.remove()">' if img else "")
+                + (hero if img else tile_html)
                 + f'<p class="chain">{esc(chain)}</p><h1>{esc(i["name"])}</h1>'
                 + f'<p><span class="pill {cls}">{esc(text)}</span></p>'
                 + f'<p class="lead">{esc(lead)}</p><dl class="facts">{facts}</dl>{about}</article>{more}')
