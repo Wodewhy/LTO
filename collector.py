@@ -319,7 +319,7 @@ def enrich_images(items, limit=25):
 def prune(items, today):
     keep = []
     for i in items:
-        if i["end"] and parse_iso(i["end"]) < today:
+        if i["end"] and parse_iso(i["end"]) < today - timedelta(days=30):
             continue
         if not i["end"] and parse_iso(i["last_post"]) < today - timedelta(days=NO_END_MAX_AGE_DAYS):
             continue
