@@ -29,7 +29,7 @@ label.chk{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:.9
 .end{margin-top:auto;display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:.88rem;padding-top:8px;border-top:1px dashed var(--line)}
 .pill{border-radius:999px;padding:2px 10px;font-weight:600;font-size:.8rem;white-space:nowrap}
 .p-ok{background:var(--okbg);color:var(--ok)}.p-soon{background:var(--soonbg);color:var(--soon)}.p-na{background:var(--nabg);color:var(--na)}
-.src{color:var(--mute);font-size:.78rem}.src a{color:var(--accent)}
+.src{color:var(--mute);font-size:.78rem}.src a{color:var(--accent)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--bar)}
 .empty{padding:32px;text-align:center;color:var(--mute)}
 .note{margin-top:28px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--mute);font-size:.88rem}
 </style>
@@ -46,7 +46,7 @@ label.chk{display:flex;gap:6px;align-items:center;color:var(--mute);font-size:.9
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"></div>
-  <div class="note">End dates come from each chain's announcements and press coverage. "Not announced" means the chain hasn't published one (often "while supplies last"). Participating locations only; dates and availability can vary. Expired items hide automatically.</div>
+  <div class="note">End dates come from each chain's announcements and press coverage. "Not announced" means the chain hasn't published one (often "while supplies last"). Participating locations only; dates and availability can vary. Expired items hide automatically. Photos come from the original posts or articles and belong to their owners.</div>
 </div>
 <script>
 let UPDATED="";
@@ -79,6 +79,7 @@ function render(){
     const b=document.createElement("span");b.className="pill "+pill[1];b.textContent=pill[0];
     e.append(w,b);
     const s=document.createElement("div");s.className="src";s.append("Source: ");if(/^https?:\/\//.test(i.url||"")){const l=document.createElement("a");l.href=i.url;l.rel="noopener noreferrer";l.target="_blank";l.textContent=i.src;s.append(l)}else s.append(i.src);
+    if(/^https:\/\//.test(i.image||"")){const m=document.createElement("img");m.loading="lazy";m.alt=i.name;m.referrerPolicy="no-referrer";m.onerror=()=>m.remove();m.onload=()=>{if(m.naturalWidth<200)m.remove()};m.src=i.image;c.append(m)}
     c.append(a,h,p,e,s);g.appendChild(c);
   });
 }
