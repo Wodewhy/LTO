@@ -11,7 +11,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "krispy-kreme-looney-tunes-lab-dozen"
+   "slug": "krispy-kreme-looney-tunes-lab-dozen",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
   },
   {
    "chain": "Taco Bell",
@@ -23,9 +27,11 @@
    "url": "https://www.brandeating.com/2026/10/taco-bell-4-dollar-kevin-harts-usual-combo.html",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "taco-bell-kevin-harts-usual"
+   "slug": "taco-bell-kevin-harts-usual",
+   "cat": "taco",
+   "icon": "🌮",
+   "hue": 48,
+   "photo_ok": false
   },
   {
    "chain": "Cold Stone Creamery",
@@ -37,7 +43,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "cold-stone-creamery-halloween-lineup-black-cake-batter"
+   "slug": "cold-stone-creamery-halloween-lineup-black-cake-batter",
+   "cat": "icecream",
+   "icon": "🍦",
+   "hue": 200,
+   "photo_ok": false
   },
   {
    "chain": "Dairy Queen",
@@ -49,7 +59,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "dairy-queen-spellbound-series"
+   "slug": "dairy-queen-spellbound-series",
+   "cat": "icecream",
+   "icon": "🍦",
+   "hue": 200,
+   "photo_ok": false
   },
   {
    "chain": "Wingstop",
@@ -61,9 +75,11 @@
    "url": "https://www.fastfoodpost.com/wingstop-debuts-new-sour-patch-kids-wicked-punch-glazed-wings/",
    "last_post": "2026-10-14",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Wingstop-Debuts-New-Sour-Patch-Kids-Wicked-Punch-Glazed-Wings.jpg",
-   "img_checked": true,
-   "slug": "wingstop-sour-patch-kids-wicked-punch"
+   "slug": "wingstop-sour-patch-kids-wicked-punch",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
+   "photo_ok": false
   },
   {
    "chain": "Buffalo Wild Wings",
@@ -75,7 +91,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "buffalo-wild-wings-fright-feast-menu"
+   "slug": "buffalo-wild-wings-fright-feast-menu",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
+   "photo_ok": false
   },
   {
    "chain": "Arby's",
@@ -87,7 +107,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "arbys-chicken-cheesesteaks"
+   "slug": "arbys-chicken-cheesesteaks",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
   },
   {
    "chain": "Burger King",
@@ -99,7 +123,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "burger-king-game-day-menu"
+   "slug": "burger-king-game-day-menu",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
   },
   {
    "chain": "Burger King",
@@ -111,9 +139,11 @@
    "url": "https://www.fastfoodpost.com/burger-king-unleashes-new-vampires-bite-strawberry-sprite-drink-for-halloween/",
    "last_post": "2026-10-08",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Burger-King-Unleashes-New-Vampires-Bite-Strawberry-Sprite-Drink-for-Halloween.jpg",
-   "img_checked": true,
-   "slug": "burger-king-vampires-bite-strawberry-sprite"
+   "slug": "burger-king-vampires-bite-strawberry-sprite",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
   },
   {
    "chain": "Burger King",
@@ -125,9 +155,11 @@
    "url": "https://www.fastfoodpost.com/burger-king-debuts-new-stadium-inspired-menu-with-game-day-pretzel-burger-and-game-day-chicken-fries/",
    "last_post": "2026-10-08",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Burger-King-Debuts-New-Stadium-Inspired-Menu-With-Game-Day-Pretzel-Burger-and-Game-Day-Chicken-Fries.jpg",
-   "img_checked": true,
-   "slug": "burger-king-game-day-pretzel-burger"
+   "slug": "burger-king-game-day-pretzel-burger",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
   },
   {
    "chain": "Burger King",
@@ -139,9 +171,11 @@
    "url": "https://www.fastfoodpost.com/burger-king-debuts-new-stadium-inspired-menu-with-game-day-pretzel-burger-and-game-day-chicken-fries/",
    "last_post": "2026-10-08",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Burger-King-Debuts-New-Stadium-Inspired-Menu-With-Game-Day-Pretzel-Burger-and-Game-Day-Chicken-Fries.jpg",
-   "img_checked": true,
-   "slug": "burger-king-game-day-chicken-fries"
+   "slug": "burger-king-game-day-chicken-fries",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
   },
   {
    "chain": "Chili's",
@@ -153,9 +187,11 @@
    "url": "https://www.fastfoodpost.com/chilis-launches-new-chicken-parm-big-crispy-sandwich/",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Chilis-Launches-New-Chicken-Parm-Big-Crispy-Sandwich.jpg",
-   "img_checked": true,
-   "slug": "chilis-chicken-parm-big-crispy"
+   "slug": "chilis-chicken-parm-big-crispy",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
   },
   {
    "chain": "Dunkin'",
@@ -167,7 +203,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "dunkin-halloween-menu"
+   "slug": "dunkin-halloween-menu",
+   "cat": "coffee",
+   "icon": "☕",
+   "hue": 25,
+   "photo_ok": false
   },
   {
    "chain": "Dunkin'",
@@ -179,9 +219,11 @@
    "url": "https://www.brandeating.com/2026/10/dunkin-new-avengers-doomsday-menu.html",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "dunkin-avengers-doomsday-menu"
+   "slug": "dunkin-avengers-doomsday-menu",
+   "cat": "coffee",
+   "icon": "☕",
+   "hue": 25,
+   "photo_ok": false
   },
   {
    "chain": "Dutch Bros",
@@ -193,9 +235,11 @@
    "url": "https://www.brandeating.com/2026/10/dutch-bros-unicorn-blood-vampire-slayer-halloween-2026.html",
    "last_post": "2026-10-12",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "dutch-bros-unicorn-blood"
+   "slug": "dutch-bros-unicorn-blood",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
   },
   {
    "chain": "Dutch Bros",
@@ -207,9 +251,11 @@
    "url": "https://www.brandeating.com/2026/10/dutch-bros-unicorn-blood-vampire-slayer-halloween-2026.html",
    "last_post": "2026-10-12",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "dutch-bros-vampire-slayer"
+   "slug": "dutch-bros-vampire-slayer",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
   },
   {
    "chain": "Dutch Bros",
@@ -221,9 +267,11 @@
    "url": "https://www.brandeating.com/2026/10/dutch-bros-unicorn-blood-vampire-slayer-halloween-2026.html",
    "last_post": "2026-10-12",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "dutch-bros-freeze-dried-fruity-candy-topping"
+   "slug": "dutch-bros-freeze-dried-fruity-candy-topping",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
   },
   {
    "chain": "Firehouse Subs",
@@ -235,7 +283,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "firehouse-subs-thanksgiving-turkey-sub"
+   "slug": "firehouse-subs-thanksgiving-turkey-sub",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
   },
   {
    "chain": "KFC",
@@ -247,7 +299,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "kfc-ghost-pepper-sauce"
+   "slug": "kfc-ghost-pepper-sauce",
+   "cat": "sauce",
+   "icon": "🌶️",
+   "hue": 355,
+   "photo_ok": false
   },
   {
    "chain": "Marco's Pizza",
@@ -259,7 +315,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "marcos-pizza-margherita-magnifico"
+   "slug": "marcos-pizza-margherita-magnifico",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
+   "photo_ok": false
   },
   {
    "chain": "McDonald's",
@@ -271,7 +331,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "mcdonalds-caramel-apple-pie-coffees"
+   "slug": "mcdonalds-caramel-apple-pie-coffees",
+   "cat": "coffee",
+   "icon": "☕",
+   "hue": 25,
+   "photo_ok": false
   },
   {
    "chain": "McDonald's",
@@ -283,7 +347,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "mcdonalds-boo-buckets-happy-meal"
+   "slug": "mcdonalds-boo-buckets-happy-meal",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
   },
   {
    "chain": "Popeyes",
@@ -295,9 +363,11 @@
    "url": "https://www.fastfoodpost.com/popeyes-adds-new-bacon-and-cheese-honey-chicken-biscuit-and-pineapple-beverages/",
    "last_post": "2026-10-07",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Popeyes-Adds-New-Bacon-and-Cheese-Honey-Chicken-Biscuit-and-Pineapple-Beverages.jpg",
-   "img_checked": true,
-   "slug": "popeyes-bacon-and-cheese-honey-chicken-biscuit"
+   "slug": "popeyes-bacon-and-cheese-honey-chicken-biscuit",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
   },
   {
    "chain": "Popeyes",
@@ -309,9 +379,11 @@
    "url": "https://www.fastfoodpost.com/popeyes-adds-new-bacon-and-cheese-honey-chicken-biscuit-and-pineapple-beverages/",
    "last_post": "2026-10-07",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Popeyes-Adds-New-Bacon-and-Cheese-Honey-Chicken-Biscuit-and-Pineapple-Beverages.jpg",
-   "img_checked": true,
-   "slug": "popeyes-pineapple-beverages"
+   "slug": "popeyes-pineapple-beverages",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
   },
   {
    "chain": "Shake Shack",
@@ -323,9 +395,11 @@
    "url": "https://www.fastfoodpost.com/shake-shack-welcomes-back-the-big-shack/",
    "last_post": "2026-10-09",
    "first_seen": "2026-10-14",
-   "image": "https://www.fastfoodpost.com/wp-content/uploads/2026/10/Shake-Shack-Welcomes-Back-the-Big-Shack.jpg",
-   "img_checked": true,
-   "slug": "shake-shack-big-shack"
+   "slug": "shake-shack-big-shack",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
   },
   {
    "chain": "Taco Bell",
@@ -337,7 +411,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "taco-bell-duo-habanero-sauce"
+   "slug": "taco-bell-duo-habanero-sauce",
+   "cat": "sauce",
+   "icon": "🌶️",
+   "hue": 355,
+   "photo_ok": false
   },
   {
    "chain": "Taco Bell",
@@ -349,7 +427,11 @@
    "url": "",
    "first_seen": "2026-10-14",
    "last_post": "2026-10-14",
-   "slug": "taco-bell-milk-bar-birthday-cake-empanada"
+   "slug": "taco-bell-milk-bar-birthday-cake-empanada",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
   },
   {
    "chain": "Taco Bell",
@@ -361,9 +443,11 @@
    "url": "https://www.brandeating.com/2026/10/taco-bell-4-dollar-kevin-harts-usual-combo.html",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "taco-bell-paris-hiltons-usual"
+   "slug": "taco-bell-paris-hiltons-usual",
+   "cat": "taco",
+   "icon": "🌮",
+   "hue": 48,
+   "photo_ok": false
   },
   {
    "chain": "Taco Bell",
@@ -375,9 +459,12 @@
    "url": "https://www.brandeating.com/2026/10/taco-bell-4-dollar-kevin-harts-usual-combo.html",
    "last_post": "2026-10-13",
    "first_seen": "2026-10-14",
-   "image": "",
-   "img_checked": true,
-   "slug": "taco-bell-doja-cats-usual"
+   "slug": "taco-bell-doja-cats-usual",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
+   "photo_ok": false
   }
- ]
+ ],
+ "contact": "https://docs.google.com/forms/d/e/1FAIpQLSdLBXDpPbOPYz3TnWGFuguZzYFKmqZsAXC4Wytbuszvb4RtyA/viewform"
 }
