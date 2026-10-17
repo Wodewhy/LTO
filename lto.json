@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -687,6 +687,22 @@
    "cat": "taco",
    "icon": "🌮",
    "hue": 48,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Dream Refresca lineup",
+   "desc": "New fruit-flavored, brightly colored Refresca drinks in three varieties, $2 each at participating locations nationwide. Includes Pineapple Dragonfruit Freeze.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/taco-bell-debuts-new-dream-refresca-drinks/",
+   "last_post": "2026-10-16",
+   "first_seen": "2026-10-17",
+   "slug": "taco-bell-dream-refresca-lineup",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
    "photo_ok": false
   }
  ],
