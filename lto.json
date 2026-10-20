@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -690,6 +690,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Popeyes",
+   "name": "Cajun-Style Turkey",
+   "desc": "Returning whole turkey hand-rubbed with Popeyes' Cajun Louisiana seasoning, feeds 8-12 people. Pre-order only at participating locations for Thanksgiving.",
+   "start": "2026-10-19",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/popeyes-is-welcoming-back-cajun-style-turkey/",
+   "last_post": "2026-10-19",
+   "first_seen": "2026-10-20",
+   "slug": "popeyes-cajun-style-turkey",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
+   "photo_ok": false
+  },
+  {
    "chain": "Shake Shack",
    "name": "Big Shack",
    "desc": "Returning burger with two quarter-pound Angus beef patties, two slices of American cheese, lettuce, tomato, pickles, onions and Shack sauce.",
@@ -847,6 +863,38 @@
    "cat": "drink",
    "icon": "🥤",
    "hue": 185,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Creamy Sriracha Chicken Nacho Fries",
+   "desc": "Seasoned fries topped with slow-roasted chicken, a mozzarella, cheddar and pepperjack blend, nacho cheese sauce and creamy sriracha.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/taco-bell-debuts-new-creamy-sriracha-chicken-nacho-fries/",
+   "last_post": "2026-10-19",
+   "first_seen": "2026-10-20",
+   "slug": "taco-bell-creamy-sriracha-chicken-nacho-fries",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "$2 Crunchadilla",
+   "desc": "Small chicken quesadilla with three cheeses, half a crispy Mexican pizza shell and sour cream, with Creamy Jalapeño or Creamy Sriracha sauce.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/taco-bell-new-creamy-sriracha-chicken-nacho-fries-and-crunchadilla.html",
+   "last_post": "2026-10-19",
+   "first_seen": "2026-10-20",
+   "slug": "taco-bell-2-crunchadilla",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
    "photo_ok": false
   }
  ],
