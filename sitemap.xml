@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://wodewhy.github.io/LTO/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/chains/krispy-kreme/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/crumbl/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/cold-stone-creamery/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/dairy-queen/</loc><lastmod>2026-10-20</lastmod></url>
@@ -21,6 +22,8 @@
 <url><loc>https://wodewhy.github.io/LTO/chains/popeyes/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/shake-shack/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/taco-bell/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/chains/whataburger/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/krispy-kreme-taz-chocolate-original-glazed-dozen/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/crumbl-dubai-style-chocolate-brownie/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/crumbl-cookies-cream-white-chip-cookie/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/crumbl-tres-leches-cake/</loc><lastmod>2026-10-19</lastmod></url>
@@ -60,6 +63,7 @@
 <url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-caramel-apple-pie-coffees/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-boo-buckets-happy-meal/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-disney-villains-boo-buckets/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-8-quarter-pounder-with-cheese-meal-deal/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/popeyes-bacon-and-cheese-honey-chicken-biscuit/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/popeyes-pineapple-beverages/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/popeyes-cajun-style-turkey/</loc><lastmod>2026-10-19</lastmod></url>
@@ -75,4 +79,7 @@
 <url><loc>https://wodewhy.github.io/LTO/items/taco-bell-dream-refresca-lineup/</loc><lastmod>2026-10-16</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/taco-bell-creamy-sriracha-chicken-nacho-fries/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/taco-bell-2-crunchadilla/</loc><lastmod>2026-10-19</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/whataburger-bacon-blaze-chicken-sandwich/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/whataburger-bacon-blaze-jalape-o-double/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/whataburger-sleigh-berry-whatafresher/</loc><lastmod>2026-10-20</lastmod></url>
 </urlset>
