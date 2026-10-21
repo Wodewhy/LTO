@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -927,6 +927,22 @@
    "cat": "pizza",
    "icon": "🍕",
    "hue": 8,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Baja Chicken Menu",
+   "desc": "Test lineup in Sacramento, CA: Baja Crispy and Cantina Baja Chicken tacos, burritos and bowls with Baja Sauce, Baja Slaw, cheddar and pico de gallo.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/taco-bell-tests-new-baja-chicken-menu.html",
+   "last_post": "2026-10-20",
+   "first_seen": "2026-10-21",
+   "slug": "taco-bell-baja-chicken-menu",
+   "cat": "taco",
+   "icon": "🌮",
+   "hue": 48,
    "photo_ok": false
   },
   {
