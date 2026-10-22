@@ -594,6 +594,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Dutch Bros",
+   "name": "Creepy Crawler",
+   "desc": "Limited-time Halloween drink with blue raspberry, kiwi and vanilla, topped with gummy worms. Offered as a blended or iced Rebel, Myst Energy Refresher, lemonade",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/dutch-bros-debuts-new-creepy-crawler.html",
+   "last_post": "2026-10-21",
+   "first_seen": "2026-10-22",
+   "slug": "dutch-bros-creepy-crawler",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
+  },
+  {
    "chain": "Firehouse Subs",
    "name": "Thanksgiving Turkey Sub",
    "desc": "Seasonal turkey sub back for the holidays.",
@@ -815,6 +831,22 @@
    "cat": "burger",
    "icon": "🍔",
    "hue": 28,
+   "photo_ok": false
+  },
+  {
+   "chain": "Pizza Hut",
+   "name": "Cheesy Bites Stuffed Crust Pizza",
+   "desc": "Returning large one-topping pizza ringed by 28 cheese-stuffed pull-apart bites, at participating locations for a limited time.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/pizza-hut-brings-back-cheesy-bites-stuffed-crust-pizza/",
+   "last_post": "2026-10-22",
+   "first_seen": "2026-10-22",
+   "slug": "pizza-hut-cheesy-bites-stuffed-crust-pizza",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
    "photo_ok": false
   },
   {
