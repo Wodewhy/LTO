@@ -178,6 +178,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Papa Johns",
+   "name": "Jack-O'-Lantern Pizza",
+   "desc": "Unsliced, pumpkin-shaped thin-crust pizza decorated with a pepperoni smile and eyes and olive pupils. Starts at $11.99; price varies by location.",
+   "start": null,
+   "end": "2026-11-01",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/papa-johns-jack-o-lantern-pizza-halloween-2026.html",
+   "last_post": "2026-10-22",
+   "first_seen": "2026-10-23",
+   "slug": "papa-johns-jack-o-lantern-pizza",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
+   "photo_ok": false
+  },
+  {
    "chain": "Wingstop",
    "name": "Sour Patch Kids Wicked Punch",
    "desc": "Limited-time sour-then-sweet redberry glaze on bone-in or boneless wings, made with Sour Patch Kids. Club Wingstop members get early access Oct 23.",
@@ -431,6 +447,22 @@
    "cat": "burger",
    "icon": "🍔",
    "hue": 28,
+   "photo_ok": false
+  },
+  {
+   "chain": "Chick-fil-A",
+   "name": "Spicy Chick-fil-A Sauce",
+   "desc": "A spicier take on the classic dipping sauce with mustard, smoky tang, subtle sweetness and spicy peppers. Sold in dip cups and 8-oz bottles; permanent addition.",
+   "start": "2026-11-16",
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/new-spicy-chick-fil-a-sauce.html",
+   "last_post": "2026-10-22",
+   "first_seen": "2026-10-23",
+   "slug": "chick-fil-a-spicy-chick-fil-a-sauce",
+   "cat": "sauce",
+   "icon": "🌶️",
+   "hue": 355,
    "photo_ok": false
   },
   {
@@ -690,6 +722,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Jersey Mike's",
+   "name": "Mike's Mini Bundle",
+   "desc": "Value bundle with a choice of any cold mini sub plus a bag of chips, suggested price $7.99, at participating locations.",
+   "start": "2026-10-23",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/jersey-mikes-launches-new-mikes-mini-bundle-for-7-99/",
+   "last_post": "2026-10-23",
+   "first_seen": "2026-10-23",
+   "slug": "jersey-mikes-mikes-mini-bundle",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
+  },
+  {
    "chain": "Jimmy John's",
    "name": "Picklewich",
    "desc": "Returning pickle-themed sandwich at participating locations nationwide.",
@@ -836,11 +884,11 @@
   {
    "chain": "Pizza Hut",
    "name": "Cheesy Bites Stuffed Crust Pizza",
-   "desc": "Returning large one-topping pizza ringed by 28 cheese-stuffed pull-apart bites, at participating locations for a limited time.",
+   "desc": "Returning hand-tossed pizza with a crust ringed by 28 cheese-stuffed bites, served with marinara for dipping. Participating locations only.",
    "start": null,
    "end": null,
-   "src": "The Fast Food Post",
-   "url": "https://www.fastfoodpost.com/pizza-hut-brings-back-cheesy-bites-stuffed-crust-pizza/",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/pizza-hut-cheesy-bites-stuffed-crust-pizza-returns-fall-2026.html",
    "last_post": "2026-10-22",
    "first_seen": "2026-10-22",
    "slug": "pizza-hut-cheesy-bites-stuffed-crust-pizza",
@@ -1119,6 +1167,38 @@
    "cat": "taco",
    "icon": "🌮",
    "hue": 48,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Strawberry Dream Refresca",
+   "desc": "Lemonade Agua Refresca with strawberry flavor, vanilla creamer, and freeze-dried strawberry pieces; $4.49 for a 20-oz Medium.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/taco-bell-introduces-new-dream-refrescas.html",
+   "last_post": "2026-10-22",
+   "first_seen": "2026-10-23",
+   "slug": "taco-bell-strawberry-dream-refresca",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
+  },
+  {
+   "chain": "Taco Bell",
+   "name": "Pineapple Dragonfruit Dream Refresca",
+   "desc": "Pineapple-flavored slushy blended with vanilla creamer and freeze-dried dragonfruit pieces; $3.99 Regular, $4.19 Large.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/taco-bell-introduces-new-dream-refrescas.html",
+   "last_post": "2026-10-22",
+   "first_seen": "2026-10-23",
+   "slug": "taco-bell-pineapple-dragonfruit-dream-refresca",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
    "photo_ok": false
   },
   {
