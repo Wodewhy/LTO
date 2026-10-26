@@ -1328,6 +1328,38 @@
    "icon": "🥤",
    "hue": 185,
    "photo_ok": false
+  },
+  {
+   "chain": "Zaxby's",
+   "name": "Honey Chipotle Sauce",
+   "desc": "New Honey Chipotle dipping sauce for the holidays. Zax Rewardz members get early access starting Oct 26 via app, online and delivery.",
+   "start": "2026-11-02",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/zaxbys-launches-new-honey-chipotle-sauce-and-peppermint-cookies-cream-shake/",
+   "last_post": "2026-10-26",
+   "first_seen": "2026-10-26",
+   "slug": "zaxbys-honey-chipotle-sauce",
+   "cat": "sauce",
+   "icon": "🌶️",
+   "hue": 355,
+   "photo_ok": false
+  },
+  {
+   "chain": "Zaxby's",
+   "name": "Peppermint Cookies & Cream Shake",
+   "desc": "New holiday milkshake blending peppermint with cookies and cream. Rewardz members get early access starting Oct 26.",
+   "start": "2026-11-02",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/zaxbys-launches-new-honey-chipotle-sauce-and-peppermint-cookies-cream-shake/",
+   "last_post": "2026-10-26",
+   "first_seen": "2026-10-26",
+   "slug": "zaxbys-peppermint-cookies-cream-shake",
+   "cat": "icecream",
+   "icon": "🍦",
+   "hue": 200,
+   "photo_ok": false
   }
  ],
  "contact": "https://docs.google.com/forms/d/e/1FAIpQLSdLBXDpPbOPYz3TnWGFuguZzYFKmqZsAXC4Wytbuszvb4RtyA/viewform"
