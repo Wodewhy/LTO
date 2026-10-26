@@ -1010,6 +1010,38 @@
    "photo_ok": false
   },
   {
+   "chain": "Sonic",
+   "name": "Santa Slush Float",
+   "desc": "Holiday slush float with merry cherry flavor and sweet ingredients, priced at $2.99. App early access starts Oct 26; general release Nov 2.",
+   "start": "2026-11-02",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/sonic-introduces-new-santa-slush-float-and-new-smoked-gouda-and-bacon-smasher/",
+   "last_post": "2026-10-26",
+   "first_seen": "2026-10-26",
+   "slug": "sonic-santa-slush-float",
+   "cat": "drink",
+   "icon": "🥤",
+   "hue": 185,
+   "photo_ok": false
+  },
+  {
+   "chain": "Sonic",
+   "name": "Smoked Gouda and Bacon Smasher",
+   "desc": "New smash-style burger topped with smoked gouda and bacon. App early access starts Oct 26; general release Nov 2 at participating locations.",
+   "start": "2026-11-02",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/sonic-introduces-new-santa-slush-float-and-new-smoked-gouda-and-bacon-smasher/",
+   "last_post": "2026-10-26",
+   "first_seen": "2026-10-26",
+   "slug": "sonic-smoked-gouda-and-bacon-smasher",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
+  },
+  {
    "chain": "Subway",
    "name": "Fritos Chicken Enchilada Sub",
    "desc": "Fan-favorite sub with chicken enchilada flavors and Fritos, back after more than a decade away, tied to National Sandwich Day.",
