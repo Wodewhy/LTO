@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -655,6 +655,22 @@
    "cat": "sandwich",
    "icon": "🥪",
    "hue": 85,
+   "photo_ok": false
+  },
+  {
+   "chain": "Chipotle",
+   "name": "Smoked Brisket",
+   "desc": "Returning protein of brisket seasoned with smoked serrano and chipotle peppers, mesquite-smoked, seared, tossed in smoky chili sauce, and chopped in small batch",
+   "start": "2026-11-05",
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/chipotle-smoked-brisket-2026.html",
+   "last_post": "2026-10-28",
+   "first_seen": "2026-10-30",
+   "slug": "chipotle-smoked-brisket",
+   "cat": "taco",
+   "icon": "🌮",
+   "hue": 48,
    "photo_ok": false
   },
   {
@@ -1378,6 +1394,38 @@
    "photo_ok": false
   },
   {
+   "chain": "Smoothie King",
+   "name": "Dot Cake Protein Smoothie",
+   "desc": "Banana smoothie made with the Slim-N-Trim Blend and rainbow nonpareil sprinkles, inspired by the viral dot cake. Has 13g protein.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/smoothie-king-new-dot-cake-protein-smoothie-and-toast.html",
+   "last_post": "2026-10-28",
+   "first_seen": "2026-10-30",
+   "slug": "smoothie-king-dot-cake-protein-smoothie",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
+  },
+  {
+   "chain": "Smoothie King",
+   "name": "Dot Cake Protein Toast",
+   "desc": "Multigrain toast spread with chocolate hazelnut or peanut butter and topped with rainbow nonpareils. Has 11+ grams of protein.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/smoothie-king-new-dot-cake-protein-smoothie-and-toast.html",
+   "last_post": "2026-10-28",
+   "first_seen": "2026-10-30",
+   "slug": "smoothie-king-dot-cake-protein-toast",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
+  },
+  {
    "chain": "Sonic",
    "name": "Santa Slush Float",
    "desc": "Holiday slush float with merry cherry flavor and sweet ingredients, priced at $2.99. App early access starts Oct 26; general release Nov 2.",
@@ -1460,17 +1508,33 @@
   {
    "chain": "Subway",
    "name": "Fritos Chicken Enchilada Sub",
-   "desc": "Fan-favorite sub with chicken enchilada flavors and Fritos, back after more than a decade away, tied to National Sandwich Day.",
+   "desc": "Returning sub with enchilada-marinated rotisserie-style chicken, Fritos, Baja Chipotle sauce, Monterey Cheddar, lettuce, tomatoes and red onions.",
    "start": "2026-10-27",
    "end": null,
-   "src": "The Fast Food Post",
-   "url": "https://www.fastfoodpost.com/subway-welcomes-back-the-fritos-chicken-enchilada-sub/",
-   "last_post": "2026-10-21",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/subway-fritos-chicken-enchilada-sub-fall-2026.html",
+   "last_post": "2026-10-28",
    "first_seen": "2026-10-21",
    "slug": "subway-fritos-chicken-enchilada-sub",
    "cat": "sandwich",
    "icon": "🥪",
    "hue": 85,
+   "photo_ok": false
+  },
+  {
+   "chain": "Subway",
+   "name": "Caramel Apple Cookie",
+   "desc": "Returning cookie with apple pieces, caramel chips and salted caramel crunch, topped with a caramel icing drizzle.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/subway-fritos-chicken-enchilada-sub-fall-2026.html",
+   "last_post": "2026-10-28",
+   "first_seen": "2026-10-30",
+   "slug": "subway-caramel-apple-cookie",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
    "photo_ok": false
   },
   {
