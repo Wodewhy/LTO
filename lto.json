@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -559,6 +559,22 @@
    "cat": "sandwich",
    "icon": "🥪",
    "hue": 85,
+   "photo_ok": false
+  },
+  {
+   "chain": "BJ's Restaurant & Brewhouse",
+   "name": "Nutella Gone Bananas Pizookie",
+   "desc": "Banana bread cookie base topped with two scoops of vanilla bean ice cream, Nutella drizzle and crushed hazelnuts. Limited time, while supplies last.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/bjs-debuts-new-nutella-banana-pizookie.html",
+   "last_post": "2026-10-30",
+   "first_seen": "2026-11-01",
+   "slug": "bjs-restaurant-brewhouse-nutella-gone-bananas-pizookie",
+   "cat": "icecream",
+   "icon": "🍦",
+   "hue": 200,
    "photo_ok": false
   },
   {
