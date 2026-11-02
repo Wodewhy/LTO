@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://wodewhy.github.io/LTO/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/wingstop/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/chains/crumbl/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/buffalo-wild-wings/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/cold-stone-creamery/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/freddys-frozen-custard-steakburgers/</loc><lastmod>2026-11-02</lastmod></url>
@@ -30,6 +31,7 @@
 <url><loc>https://wodewhy.github.io/LTO/chains/marcos-pizza/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/mcdonalds/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/moes-southwest-grill/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/chains/panda-express/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/pizza-hut/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/popeyes/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/shake-shack/</loc><lastmod>2026-11-02</lastmod></url>
@@ -39,6 +41,13 @@
 <url><loc>https://wodewhy.github.io/LTO/chains/taco-bell/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/chains/whataburger/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/wingstop-sour-patch-kids-wicked-punch/</loc><lastmod>2026-10-14</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-scoopable-cookie-dough/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-frozen-hot-chocolate-cookie/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-caramel-apple-cookie/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-sea-salt-toffee-skillet-cookie/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-brookies-cream-cookie-featuring-oreo/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-confetti-cake-batter-cheesecake/</loc><lastmod>2026-11-02</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/crumbl-strawberry-heart-cake/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/buffalo-wild-wings-fright-feast-menu/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/cold-stone-creamery-blue-cotton-candy-ice-cream/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/cold-stone-creamery-the-cat-in-the-hats-cotton-candy-catastrophe-creation/</loc><lastmod>2026-10-14</lastmod></url>
@@ -116,6 +125,7 @@
 <url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-frosted-cranberry-drinks/</loc><lastmod>2026-10-27</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/mcdonalds-cookie-butter-coffees/</loc><lastmod>2026-10-27</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/moes-southwest-grill-birria/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://wodewhy.github.io/LTO/items/panda-express-shanghai-beef-noodle-box/</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/pizza-hut-cheesy-bites-stuffed-crust-pizza/</loc><lastmod>2026-10-22</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/popeyes-bacon-and-cheese-honey-chicken-biscuit/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://wodewhy.github.io/LTO/items/popeyes-pineapple-beverages/</loc><lastmod>2026-10-07</lastmod></url>
