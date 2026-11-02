@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -399,6 +399,70 @@
    "cat": "icecream",
    "icon": "🍦",
    "hue": 200,
+   "photo_ok": false
+  },
+  {
+   "chain": "Freddy's Frozen Custard & Steakburgers",
+   "name": "Peanut Butter Blossom Cookie Concrete",
+   "desc": "Vanilla frozen custard blended with cookie dough and Reese's peanut butter sauce, topped with Hershey's chocolate chips.",
+   "start": "2026-11-04",
+   "end": "2027-01-05",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/freddys-new-hersheys-desserts-and-returning-french-onion-steakburger.html",
+   "last_post": "2026-10-31",
+   "first_seen": "2026-11-02",
+   "slug": "freddys-frozen-custard-steakburgers-peanut-butter-blossom-cookie-concrete",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
+  },
+  {
+   "chain": "Freddy's Frozen Custard & Steakburgers",
+   "name": "Heath Caramel Cheesecake Concrete",
+   "desc": "Vanilla custard blended with double Heath Toffee, caramel sauce and cheesecake, topped with whipped cream and cinnamon streusel.",
+   "start": "2026-11-04",
+   "end": "2027-01-05",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/freddys-new-hersheys-desserts-and-returning-french-onion-steakburger.html",
+   "last_post": "2026-10-31",
+   "first_seen": "2026-11-02",
+   "slug": "freddys-frozen-custard-steakburgers-heath-caramel-cheesecake-concrete",
+   "cat": "meal",
+   "icon": "🍽️",
+   "hue": 260,
+   "photo_ok": false
+  },
+  {
+   "chain": "Freddy's Frozen Custard & Steakburgers",
+   "name": "Hershey's Snowfall Sundae",
+   "desc": "Vanilla custard with Hershey's chocolate sauce, marshmallow sauce, chocolate chips, whipped cream and a maraschino cherry.",
+   "start": "2026-11-04",
+   "end": "2027-01-05",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/freddys-new-hersheys-desserts-and-returning-french-onion-steakburger.html",
+   "last_post": "2026-10-31",
+   "first_seen": "2026-11-02",
+   "slug": "freddys-frozen-custard-steakburgers-hersheys-snowfall-sundae",
+   "cat": "icecream",
+   "icon": "🍦",
+   "hue": 200,
+   "photo_ok": false
+  },
+  {
+   "chain": "Freddy's Frozen Custard & Steakburgers",
+   "name": "French Onion Steakburger",
+   "desc": "Two steakburger patties with Swiss cheese, grilled and crispy onions, and French onion aioli on a toasted bun.",
+   "start": "2026-11-04",
+   "end": "2027-01-05",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/10/freddys-new-hersheys-desserts-and-returning-french-onion-steakburger.html",
+   "last_post": "2026-10-31",
+   "first_seen": "2026-11-02",
+   "slug": "freddys-frozen-custard-steakburgers-french-onion-steakburger",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
    "photo_ok": false
   },
   {
