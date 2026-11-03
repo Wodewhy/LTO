@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -511,6 +511,22 @@
    "cat": "icecream",
    "icon": "🍦",
    "hue": 200,
+   "photo_ok": false
+  },
+  {
+   "chain": "Milk Bar",
+   "name": "Butter Lover's Cookie",
+   "desc": "Soft, chewy sugar-style cookie made with Plugra European Style Butter. Sold in a tin of six for $30 at Milk Bar bakeries and online.",
+   "start": null,
+   "end": "2026-12-05",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/11/review-milk-bar-butters-lovers-cookie.html",
+   "last_post": "2026-11-02",
+   "first_seen": "2026-11-03",
+   "slug": "milk-bar-butter-lovers-cookie",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
    "photo_ok": false
   },
   {
