@@ -834,6 +834,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Carl's Jr.",
+   "name": "Angus Steakhouse Burger",
+   "desc": "Burger with two seasoned 100% Angus beef patties, two slices of Swiss cheese, grilled onions and bistro steak sauce.",
+   "start": "2026-11-04",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/carls-jr-introduces-new-angus-steakhouse-burger/",
+   "last_post": "2026-11-04",
+   "first_seen": "2026-11-04",
+   "slug": "carls-jr-angus-steakhouse-burger",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
+  },
+  {
    "chain": "Casey's",
    "name": "Pan Pizza",
    "desc": "New square pan pizza with a thick, fluffy double-zero flour crust, edge-to-edge mozzarella and a crispy cheese crown, available with any pizza build. Permanent ",
@@ -1583,6 +1599,22 @@
    "cat": "sauce",
    "icon": "🌶️",
    "hue": 355,
+   "photo_ok": false
+  },
+  {
+   "chain": "KFC",
+   "name": "Avengers: Doomsday Doom Menu",
+   "desc": "Marvel Doctor Doom-themed lineup: Doom Burger on a black sesame seed bun, Doom Dripped Wings, Doom Loaded Fries and more, at participating locations.",
+   "start": "2026-11-09",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/kfc-launches-avengers-doomsday-inspired-menu-featuring-new-doom-burger-with-a-black-sesame-seed-bun-doom-dripped-wings-and-more/",
+   "last_post": "2026-11-04",
+   "first_seen": "2026-11-04",
+   "slug": "kfc-avengers-doomsday-doom-menu",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
    "photo_ok": false
   },
   {
