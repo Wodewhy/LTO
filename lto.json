@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -1772,6 +1772,22 @@
    "last_post": "2026-10-20",
    "first_seen": "2026-10-20",
    "slug": "popeyes-cajun-style-turkey",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
+   "photo_ok": false
+  },
+  {
+   "chain": "Popeyes",
+   "name": "Cajun Onion Rings",
+   "desc": "Returning side of thick-cut onion rings with Cajun seasoning, fried crispy and served with a cup of Buttermilk Ranch for dipping.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/popeyes-adds-cajun-onion-rings-to-its-menu/",
+   "last_post": "2026-11-03",
+   "first_seen": "2026-11-04",
+   "slug": "popeyes-cajun-onion-rings",
    "cat": "chicken",
    "icon": "🍗",
    "hue": 38,
