@@ -1714,6 +1714,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Jack in the Box",
+   "name": "Bonus Jack",
+   "desc": "Returning burger lineup with seasoned 100% beef patties, American cheese, shredded lettuce, pickles and Secret Sauce on a buttery bakery bun.",
+   "start": "2026-11-05",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/bonus-jack-back-at-jack-in-the-box/",
+   "last_post": "2026-11-05",
+   "first_seen": "2026-11-05",
+   "slug": "jack-in-the-box-bonus-jack",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
+   "photo_ok": false
+  },
+  {
    "chain": "Jersey Mike's",
    "name": "Mike's Hot Italian",
    "desc": "Limited-time hot Italian sub, mentioned as still available at about $8.95 for a regular size.",
