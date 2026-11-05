@@ -2018,6 +2018,22 @@
    "photo_ok": false
   },
   {
+   "chain": "McDonald's",
+   "name": "Cookie Butter Frappe",
+   "desc": "Caramel coffee frappe blended with ice and cookie butter syrup, topped with vanilla whipped topping and speculoos cookie crumble. A holiday flavor.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/11/review-mcdonalds-cookie-butter-frappe.html",
+   "last_post": "2026-11-04",
+   "first_seen": "2026-11-05",
+   "slug": "mcdonalds-cookie-butter-frappe",
+   "cat": "coffee",
+   "icon": "☕",
+   "hue": 25,
+   "photo_ok": false
+  },
+  {
    "chain": "Moe's Southwest Grill",
    "name": "Birria",
    "desc": "Slow-braised beef simmered with chiles and garlic, offered as a protein for burritos, bowls, tacos, quesadillas and more.",
