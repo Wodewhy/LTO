@@ -1570,6 +1570,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Freddy's Frozen Custard & Steakburgers",
+   "name": "Everyday Value Menu",
+   "desc": "New value menu of fan-favorite items starting at $2.99 each, at participating locations in select markets (AZ, CO, KY, NJ, NM, NV, TX).",
+   "start": "2026-11-06",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/freddys-launches-everyday-value-menu/",
+   "last_post": "2026-11-06",
+   "first_seen": "2026-11-06",
+   "slug": "freddys-frozen-custard-steakburgers-everyday-value-menu",
+   "cat": "meal",
+   "icon": "🍽️",
+   "hue": 260,
+   "photo_ok": false
+  },
+  {
    "chain": "Habit Burger & Grill",
    "name": "Ranch Dipping Trio Box",
    "desc": "$10 meal with a halved ranch cheeseburger (avocado, pickles), 5 chicken bites, small side, large ranch cup and a fountain drink.",
