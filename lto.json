@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -1967,6 +1967,22 @@
    "cat": "burger",
    "icon": "🍔",
    "hue": 28,
+   "photo_ok": false
+  },
+  {
+   "chain": "KFC",
+   "name": "Cajun Deep Fried Turkey",
+   "desc": "Fully cooked Cajun-style deep fried Thanksgiving turkey to reheat at home; pre-order and pickup at select CA, CO, UT, WA, WY locations. $79.99-$89.99.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/11/kfc-cajun-deep-fried-turkey-thanksgiving-2026.html",
+   "last_post": "2026-11-06",
+   "first_seen": "2026-11-08",
+   "slug": "kfc-cajun-deep-fried-turkey",
+   "cat": "chicken",
+   "icon": "🍗",
+   "hue": 38,
    "photo_ok": false
   },
   {
