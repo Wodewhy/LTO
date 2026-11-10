@@ -2434,6 +2434,38 @@
    "photo_ok": false
   },
   {
+   "chain": "Papa Johns",
+   "name": "The Grand Papa",
+   "desc": "Papa Johns' largest pizza ever returns for the holidays: an 18-inch XXL hand-stretched original-dough pizza with deli-style toppings, 380 calories per slice.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/papa-johns-brings-back-the-grand-papa-pizza-and-salted-caramel-blondie/",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-10",
+   "slug": "papa-johns-the-grand-papa",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
+   "photo_ok": false
+  },
+  {
+   "chain": "Papa Johns",
+   "name": "Salted Caramel Blondie",
+   "desc": "Salted Caramel Blondie dessert returns to the Papa Johns menu alongside The Grand Papa for the 2026 holiday season.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/papa-johns-brings-back-the-grand-papa-pizza-and-salted-caramel-blondie/",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-10",
+   "slug": "papa-johns-salted-caramel-blondie",
+   "cat": "pizza",
+   "icon": "🍕",
+   "hue": 8,
+   "photo_ok": false
+  },
+  {
    "chain": "Pizza Hut",
    "name": "Cheesy Bites Stuffed Crust Pizza",
    "desc": "Returning hand-tossed pizza with a crust ringed by 28 cheese-stuffed bites, served with marinara for dipping. Participating locations only.",
