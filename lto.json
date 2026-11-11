@@ -1938,6 +1938,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Hardee's",
+   "name": "Flame-Grilled Steak Lineup",
+   "desc": "Four flame-grilled steak items: two breakfast sandwiches, a breakfast bowl, and a Frisco burger, at participating locations.",
+   "start": "2026-11-11",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/hardees-introduces-new-flame-grilled-steak-lineup/",
+   "last_post": "2026-11-11",
+   "first_seen": "2026-11-11",
+   "slug": "hardees-flame-grilled-steak-lineup",
+   "cat": "sandwich",
+   "icon": "🥪",
+   "hue": 85,
+   "photo_ok": false
+  },
+  {
    "chain": "Insomnia Cookies",
    "name": "Halloween Dessert Trio",
    "desc": "Seasonal Halloween desserts: Snick-or-Treat cookie, Monster Mash Brookie and Betwixed cookie.",
