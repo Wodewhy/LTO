@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "items": [
   {
    "chain": "Krispy Kreme",
@@ -1311,6 +1311,38 @@
    "cat": "pizza",
    "icon": "🍕",
    "hue": 8,
+   "photo_ok": false
+  },
+  {
+   "chain": "Checkers & Rally's",
+   "name": "Under-$2 Cha-Ching Menu",
+   "desc": "Holiday value menu of seven items priced at $2 or less at most locations, featuring the new Smokehouse Cheddar Burger.",
+   "start": "2026-11-10",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/checkers-rallys-under-2-cha-ching-menu/",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-11",
+   "slug": "checkers-rallys-under-2-cha-ching-menu",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
+  },
+  {
+   "chain": "Checkers & Rally's",
+   "name": "Smokehouse Cheddar Burger",
+   "desc": "New burger with smokehouse and cheddar flavors, offered as part of the Under-$2 Cha-Ching Menu.",
+   "start": "2026-11-10",
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/checkers-rallys-under-2-cha-ching-menu/",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-11",
+   "slug": "checkers-rallys-smokehouse-cheddar-burger",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
    "photo_ok": false
   },
   {
