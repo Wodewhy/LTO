@@ -802,6 +802,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Carl's Jr.",
+   "name": "Angus Steakhouse Burger",
+   "desc": "Two Angus beef patties cooked to order with two slices of Swiss, grilled onions and Bistro Steak Sauce on a buttered, toasted brioche bun.",
+   "start": "2026-11-04",
+   "end": "2027-01-19",
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/11/new-at-carls-jr-big-steakhouse-burger.html",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-04",
+   "slug": "carls-jr-angus-steakhouse-burger",
+   "cat": "burger",
+   "icon": "🍔",
+   "hue": 28,
+   "photo_ok": false
+  },
+  {
    "chain": "7 Brew",
    "name": "Frankenchai Matcha Latte",
    "desc": "Halloween-themed pumpkin chai latte with matcha, spiced chai base, pumpkin sauce and choice of milk, served in a Frankenstein-stitches cup.",
@@ -1276,22 +1292,6 @@
    "last_post": "2026-10-08",
    "first_seen": "2026-10-14",
    "slug": "burger-king-game-day-chicken-fries",
-   "cat": "burger",
-   "icon": "🍔",
-   "hue": 28,
-   "photo_ok": false
-  },
-  {
-   "chain": "Carl's Jr.",
-   "name": "Angus Steakhouse Burger",
-   "desc": "Burger with two seasoned 100% Angus beef patties, two slices of Swiss cheese, grilled onions and bistro steak sauce.",
-   "start": "2026-11-04",
-   "end": null,
-   "src": "The Fast Food Post",
-   "url": "https://www.fastfoodpost.com/carls-jr-introduces-new-angus-steakhouse-burger/",
-   "last_post": "2026-11-04",
-   "first_seen": "2026-11-04",
-   "slug": "carls-jr-angus-steakhouse-burger",
    "cat": "burger",
    "icon": "🍔",
    "hue": 28,
@@ -2447,6 +2447,22 @@
    "cat": "coffee",
    "icon": "☕",
    "hue": 25,
+   "photo_ok": false
+  },
+  {
+   "chain": "McDonald's",
+   "name": "Holiday Pie",
+   "desc": "Returning seasonal pie with a flaky, sugar-glazed crust, rainbow sprinkles and a custard filling. Sold at select locations, replacing the Pumpkin & Creme Pie.",
+   "start": null,
+   "end": null,
+   "src": "Brand Eating",
+   "url": "https://www.brandeating.com/2026/11/mcdonalds-holiday-pie-returns-select-locations-2026.html",
+   "last_post": "2026-11-10",
+   "first_seen": "2026-11-12",
+   "slug": "mcdonalds-holiday-pie",
+   "cat": "bakery",
+   "icon": "🍩",
+   "hue": 330,
    "photo_ok": false
   },
   {
