@@ -3266,6 +3266,22 @@
    "photo_ok": false
   },
   {
+   "chain": "Taco Bell",
+   "name": "Carne Asada",
+   "desc": "Citrus-marinated, sous vide carne asada steak in the Cantina lineup. Test run at select Nashville, TN and Minneapolis-Saint Paul, MN locations.",
+   "start": null,
+   "end": null,
+   "src": "The Fast Food Post",
+   "url": "https://www.fastfoodpost.com/taco-bell-introduces-new-carne-asada/",
+   "last_post": "2026-11-13",
+   "first_seen": "2026-11-13",
+   "slug": "taco-bell-carne-asada",
+   "cat": "taco",
+   "icon": "🌮",
+   "hue": 48,
+   "photo_ok": false
+  },
+  {
    "chain": "Whataburger",
    "name": "Bacon Blaze Chicken Sandwich",
    "desc": "New spicy chicken sandwich with bacon, part of the holiday Bacon Blaze lineup at participating locations.",
