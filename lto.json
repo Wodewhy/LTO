@@ -1,22 +1,6 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "items": [
-  {
-   "chain": "Krispy Kreme",
-   "name": "Looney Tunes Lab Dozen",
-   "desc": "$13 Halloween dozen from the Looney Tunes collection.",
-   "start": "2026-10-13",
-   "end": "2026-10-15",
-   "src": "Brand Eating",
-   "url": "",
-   "first_seen": "2026-10-14",
-   "last_post": "2026-10-14",
-   "slug": "krispy-kreme-looney-tunes-lab-dozen",
-   "cat": "bakery",
-   "icon": "🍩",
-   "hue": 330,
-   "photo_ok": false
-  },
   {
    "chain": "Taco Bell",
    "name": "Kevin Hart's Usual",
