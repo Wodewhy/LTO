@@ -1,22 +1,6 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "items": [
-  {
-   "chain": "Taco Bell",
-   "name": "Kevin Hart's Usual",
-   "desc": "$4 combo with a Beef Burrito Supreme, Crunchy Taco and a medium fountain drink. Limit one per order.",
-   "start": "2026-10-13",
-   "end": "2026-10-19",
-   "src": "Brand Eating",
-   "url": "https://www.brandeating.com/2026/10/taco-bell-4-dollar-kevin-harts-usual-combo.html",
-   "last_post": "2026-10-13",
-   "first_seen": "2026-10-14",
-   "slug": "taco-bell-kevin-harts-usual",
-   "cat": "taco",
-   "icon": "🌮",
-   "hue": 48,
-   "photo_ok": false
-  },
   {
    "chain": "Krispy Kreme",
    "name": "Taz Chocolate Original Glazed Dozen",
