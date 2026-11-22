@@ -1,22 +1,6 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "items": [
-  {
-   "chain": "Krispy Kreme",
-   "name": "Taz Chocolate Original Glazed Dozen",
-   "desc": "Dozen with nine Chocolate Original Glazed donuts and three new Taz Chocolate Tornado donuts with green icing swirl, cookie pieces and Halloween sprinkles.",
-   "start": "2026-10-20",
-   "end": "2026-10-22",
-   "src": "Brand Eating",
-   "url": "https://www.brandeating.com/2026/10/krispy-kreme-new-taz-chocolate-original-glazed-dozen.html",
-   "last_post": "2026-10-19",
-   "first_seen": "2026-10-20",
-   "slug": "krispy-kreme-taz-chocolate-original-glazed-dozen",
-   "cat": "bakery",
-   "icon": "🍩",
-   "hue": 330,
-   "photo_ok": false
-  },
   {
    "chain": "Crumbl",
    "name": "Dubai-Style Chocolate Brownie",
